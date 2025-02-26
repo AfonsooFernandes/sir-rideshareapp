@@ -1,0 +1,327 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+}
+
+.boleiasContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  justify-content: flex-start; 
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  overflow-y: auto; 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header {
+  background-color: #005f73;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 97.1%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+  padding-right: 20px;
+}
+
+.userGreeting {
+  font-size: 18px; 
+  margin-left: 880px;  
+  white-space: nowrap; 
+}
+
+.btnLogout {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: auto; 
+}
+
+.btnLogout:hover {
+  background-color: #cc0000;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modalContent h3, .modalTitle, label {
+  color: #005f73;
+  font-size: 18px; 
+  margin-bottom: 20px;
+}
+
+.modalButtons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btnModalLogout {
+  background-color: #ff0000;
+  color: white;
+}
+
+.btnModalLogout:hover {
+  background-color: #cc0000;
+}
+
+.btnModalBack {
+  background-color: #005f73;
+  color: white;
+  margin-left: 10px;
+}
+
+.btnModalBack:hover {
+  background-color: #004751;
+}
+
+input[type="text"], input[type="number"], input[type="time"], input[type="date"] {
+  width: calc(100% - 20px);
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; 
+  color: #333;
+}
+
+input[type="submit"], input[type="button"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+.footer {
+  background-color: #002529;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 99.1%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.activeRides {
+  padding: 20px;
+  margin: 20px;
+  background-color: #005f73;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activeRidesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.activeRidesHeader h2 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.createRideButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.createRideButton:hover {
+  background-color: #45a049;
+}
+
+.rideItem {
+  display: flex;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #1f4c52;
+  align-items: flex-start;
+}
+
+.rideItem:last-child {
+  margin-bottom: 90px;
+}
+
+.rideSummary {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.rideDetails {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rideItem h3, .rideItem p {
+  color: #ffffff;
+}
+
+.rideItem h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.rideItem p {
+  line-height: 1.5;
+}
+
+.rideItem:hover {
+  background-color: #11222b;
+  cursor: pointer;
+}
+
+.successMessage {
+  color: green;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header, .footer {
+    width: 100%;
+  }
+
+  .userGreeting {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  .modalContent {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    justify-content: space-between; 
+  }
+
+  .header h1 {
+    font-size: 16px;
+    margin-right: auto; 
+  }
+
+  .userGreeting {
+    display: none;
+  }
+
+  .btnLogout {
+    margin-right: 30px; 
+  }
+
+  .modalContent {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .activeRidesHeader h2 {
+    font-size: 18px; 
+  }
+
+  .searchBar {
+    font-size: 14px;
+  }
+
+  .rideItem, .activeRides {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .createRideButton, .btnLogout {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 8px 0; 
+  }
+
+  .rideActions {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .detailsButton, .acceptRideButton {
+    font-size: 12px; 
+    margin: 5px;
+    flex: 1; 
+  }
+
+  .rideDetails {
+    font-size: 14px; 
+    padding: 5px;
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+}
