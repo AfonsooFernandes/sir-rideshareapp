@@ -62,7 +62,3 @@ Uma aplicação onde utilizadores autenticados podem criar, gerir e participar e
 
 - **Afonso Fernandes:** Implementação do sistema de gestão de grupos e estatísticas das boleias, Autenticação JWT,.
 - **Pedro Correia:** Integração com WebSockets, persistência de dados com MongoDB, conexão via Mongoose.
-
-## Publicação Render
-
-- [Plataforma de Boleias em Tempo Real](https://project-assignment-3-29241-29344.onrender.com/)
