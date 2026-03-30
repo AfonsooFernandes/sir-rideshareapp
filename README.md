@@ -1,8 +1,8 @@
 # Trabalho / Assignment #3
 
 ## Constituição do Grupo
-Afonso Fernandes (29344)
-Pedro Correia (29241)
+Afonso Fernandes
+Pedro Correia
 
 # Objetivo
 
